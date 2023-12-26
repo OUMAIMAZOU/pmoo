@@ -74,4 +74,22 @@ def ModifierCour(code,matiere):
         f.close()
         print("Cour modifié avec succés")
     else: 
-        print("Cour "+code+" n'existe pas\n")
+        print("Cour "+code+" n'existe pas\n"):
+#Recherche        
+def chercher_etudiant(self, nom):
+        for etudiant in self.etudiants:
+            if etudiant['nom'] == nom:
+                return etudiant
+        return None
+
+    def chercher_cours(self, nom):
+        for cours in self.cours:
+            if cours['nom'] == nom:
+                return cours
+        return None
+
+    def chercher_enseignant(self, nom):
+        for enseignant in self.enseignants:
+            if enseignant['nom'] == nom:
+                return enseignant
+        return None
